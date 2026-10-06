@@ -1,0 +1,211 @@
+/* Configurações Globais */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f4f7f6;
+    color: #333;
+    line-height: 1.6;
+}
+
+.container {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* Cabeçalho */
+header {
+    background: linear-gradient(135deg, #1b365d, #28527a);
+    color: #fff;
+    padding: 40px 0;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+.header-content {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+/* Emblema da Tabela Periódica (Estilo Cartão do Elemento) */
+.element-badge {
+    background-color: #ffffff;
+    color: #1b365d;
+    width: 100px;
+    height: 120px;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 10px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+    font-weight: bold;
+    text-align: center;
+}
+
+.atomic-number {
+    font-size: 0.9rem;
+    align-self: flex-start;
+}
+
+.atomic-symbol {
+    font-size: 2.5rem;
+    color: #28527a;
+    line-height: 1;
+}
+
+.atomic-mass {
+    font-size: 0.75rem;
+    color: #666;
+}
+
+header h1 {
+    font-size: 2.2rem;
+    margin-bottom: 5px;
+}
+
+header .subtitle {
+    font-size: 1.1rem;
+    color: #b4c6e7;
+    margin-bottom: 10px;
+}
+
+.student-info {
+    font-size: 0.95rem;
+    color: #e2e8f0;
+}
+
+/* Menu de Navegação */
+nav {
+    background-color: #0f223d;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    overflow-x: auto;
+    padding: 10px 0;
+}
+
+nav li {
+    margin-right: 20px;
+    white-space: nowrap;
+}
+
+nav a {
+    color: #cbd5e1;
+    text-decoration: none;
+    font-size: 0.95rem;
+    font-weight: 500;
+    transition: color 0.3s;
+}
+
+nav a:hover {
+    color: #38bdf8;
+}
+
+/* Seções e Cartões */
+main {
+    padding: 40px 0;
+}
+
+.card {
+    background: #ffffff;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+    margin-bottom: 30px;
+    border-left: 5px solid #28527a;
+}
+
+h2 {
+    color: #1b365d;
+    margin-bottom: 20px;
+    font-size: 1.5rem;
+    border-bottom: 2px solid #edf2f7;
+    padding-bottom: 10px;
+}
+
+h3 {
+    color: #28527a;
+    margin: 15px 0 10px 0;
+    font-size: 1.1rem;
+}
+
+p {
+    margin-bottom: 12px;
+}
+
+ul {
+    margin-left: 20px;
+    margin-bottom: 15px;
+}
+
+li {
+    margin-bottom: 8px;
+}
+
+/* Layouts em Grade (Grid) */
+.grid-2 {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 25px;
+}
+
+.uses-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 20px;
+}
+
+.use-item {
+    background-color: #f8fafc;
+    border: 1px solid #e2e8f0;
+    padding: 20px;
+    border-radius: 8px;
+    transition: transform 0.2s;
+}
+
+.use-item:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+}
+
+.note {
+    background-color: #eff6ff;
+    border-left: 4px solid #3b82f6;
+    padding: 10px 15px;
+    border-radius: 4px;
+    font-size: 0.95rem;
+}
+
+/* Fontes / Links */
+.sources-list {
+    list-style: none;
+    margin-left: 0;
+}
+
+.sources-list li {
+    margin-bottom: 10px;
+    word-break: break-all;
+}
+
+.sources-list a {
+    color: #2563eb;
+    text-decoration: none;
+}
+
+.sources-list a:hover {
+    text-decoration: underline;
+}
+
