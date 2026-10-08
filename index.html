@@ -3,52 +3,93 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Boro (B)</title>
-  
+    <meta name="theme-color" content="#0a1c26">
+    <title>Boro (B) </title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,700;12..96,800&family=Figtree:wght@400;500;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="CSS/style.css">
 </head>
 <body>
-
-  
-    <header>
-        <div class="container header-content">
-            <div class="element-badge">
-                <span class="atomic-number">5</span>
-                <span class="atomic-symbol">B</span>
-                <span class="atomic-mass">10.81</span>
-            </div>
-            <div>
+    <header class="hero">
+        <div class="container hero-grid">
+            <div class="hero-text">
+                <div class="element-badge">
+                    <span class="atomic-number">5</span>
+                    <span class="atomic-symbol">B</span>
+                    <span class="atomic-mass">10,81</span>
+                </div>
                 <h1>Elemento Químico: Boro (B)</h1>
                 <p class="subtitle">Trabalho de Pesquisa Escolar</p>
                 <div class="student-info">
-                    <span><strong>Aluno:</strong> Daniel Lins Ribeiro Da Silva</span> | 
-                    <span><strong>N°:</strong> 8</span> | 
+                    <span><strong>Aluno:</strong> Daniel Lins Ribeiro Da Silva</span>
+                    <span><strong>N°:</strong> 8</span>
                     <span><strong>Turma:</strong> 2.ds.B</span>
                 </div>
             </div>
+
+            <div class="atom" aria-hidden="true">
+                <div class="orbit o1"><i class="e a"></i><i class="e b"></i></div>
+                <div class="orbit o2"><i class="e a"></i><i class="e c"></i><i class="e d"></i></div>
+                <div class="nucleus">B</div>
+            </div>
+        </div>
+
+        <div class="container">
+            <dl class="stats">
+                <div><dt>Número atômico</dt><dd><span>5</span></dd></div>
+                <div><dt>Massa atômica (u)</dt><dd><span>10,81</span></dd></div>
+                <div><dt>Ponto de fusão (°C)</dt><dd><span>2076</span></dd></div>
+                <div><dt>Dureza (Mohs)</dt><dd><span>9,3</span></dd></div>
+            </dl>
         </div>
     </header>
 
-   
-    <nav>
+    <nav aria-label="Seções">
         <div class="container">
             <ul>
+                <li><a href="#equipe">Equipe</a></li>
                 <li><a href="#caracteristicas">Características</a></li>
                 <li><a href="#historia">História</a></li>
                 <li><a href="#ocorrencia">Ocorrência</a></li>
                 <li><a href="#cotidiano">Uso no Cotidiano</a></li>
-                <li><a href="#importancia">Importância & Riscos</a></li>
+                <li><a href="#importancia">Importância &amp; Riscos</a></li>
                 <li><a href="#fontes">Fontes</a></li>
             </ul>
         </div>
     </nav>
 
-
     <main class="container">
 
-        <!-- Seção A: Características -->
+        <!-- Equipe -->
+        <section id="equipe">
+            <h2 class="plain">Equipe</h2>
+
+            <article class="person featured">
+                <div class="photo"><img src="img/daniel.jpg" alt="Foto de Daniel Lins Ribeiro Da Silva" style="object-position:30% 40%"></div>
+                <div class="person-info">
+                    <h3>Daniel Lins Ribeiro Da Silva</h3>
+                    <p class="role">Autor da pesquisa</p>
+                    <p>N° 8 · Turma 2.ds.B</p>
+                </div>
+            </article>
+
+            <h3 class="sub">Professores</h3>
+            <div class="teachers">
+                <article class="person">
+                    <div class="photo"><img src="img/alan.jpg" alt="Foto do professor Alan" style="object-position:50% 35%"></div>
+                    <div class="person-info"><h3>Professor Alan</h3><p class="role">Disciplina</p></div>
+                </article>
+                <article class="person">
+                    <div class="photo"><img src="img/elaine.jpg" alt="Foto da professora Elaine" style="object-position:50% 25%"></div>
+                    <div class="person-info"><h3>Professora Elaine</h3><p class="role">Disciplina</p></div>
+                </article>
+            </div>
+        </section>
+
+        <!-- Seção A -->
         <section id="caracteristicas" class="card">
-            <h2>A) Principais Características do Elemento Químico</h2>
+            <h2><span class="tag">A</span>Principais Características do Elemento Químico</h2>
             <div class="grid-2">
                 <div>
                     <p><strong>Nome e Símbolo:</strong> Boro (Símbolo: B)</p>
@@ -68,18 +109,18 @@
             </div>
         </section>
 
-        <!-- Seção B: História -->
+        <!-- Seção B -->
         <section id="historia" class="card">
-            <h2>B) História da Descoberta</h2>
+            <h2><span class="tag">B</span>História da Descoberta</h2>
             <p><strong>Ano da Descoberta:</strong> 1808</p>
             <p><strong>Cientistas Relacionados:</strong> Joseph Louis Gay-Lussac, Louis Jacques Thénard (França) e Humphry Davy (Inglaterra).</p>
             <p><strong>Como ocorreu a descoberta:</strong> Isolado de forma independente em 1808 pelos químicos franceses Gay-Lussac e Thénard, e dias depois pelo inglês Humphry Davy. O isolamento ocorreu reagindo ácido bórico (H₃BO₃) com potássio metálico sob aquecimento intenso, reduzindo o ácido e obtendo uma amostra elementar impura.</p>
             <p class="note"><strong>Nota histórica:</strong> O nome deriva da palavra árabe "buraq" ou persa "burah", referente ao mineral bórax, utilizado desde a Antiguidade na fusão de metais e vidros.</p>
         </section>
 
-        <!-- Seção C: Ocorrência -->
+        <!-- Seção C -->
         <section id="ocorrencia" class="card">
-            <h2>C) Ocorrência na Natureza</h2>
+            <h2><span class="tag">C</span>Ocorrência na Natureza</h2>
             <p><strong>Estado na Natureza:</strong> Não ocorre livre na natureza em sua forma purificada por ter forte afinidade com o oxigênio. Encontra-se sempre combinado na forma de boratos.</p>
             <h3>Principais Minerais e Fontes:</h3>
             <ul>
@@ -90,9 +131,9 @@
             <p><strong>Localização das Reservas:</strong> Depósitos evaporíticos localizados na Turquia (maior reserva do mundo), EUA (Deserto de Mojave), Argentina e Chile.</p>
         </section>
 
-        <!-- Seção D: Uso no Cotidiano -->
+        <!-- Seção D -->
         <section id="cotidiano" class="card">
-            <h2>D) Uso no Cotidiano</h2>
+            <h2><span class="tag">D</span>Uso no Cotidiano</h2>
             <div class="uses-grid">
                 <div class="use-item">
                     <h3>1. Vidros e Cerâmicas (Construção Civil)</h3>
@@ -117,41 +158,39 @@
             </div>
         </section>
 
-        <!-- Seção E: Importância e Riscos -->
+        <!-- Seção E -->
         <section id="importancia" class="card">
-            <h2>E) Importância ou Riscos</h2>
+            <h2><span class="tag">E</span>Importância ou Riscos</h2>
             <div class="grid-2">
                 <div>
                     <h3>Importância Biológica</h3>
                     <p>Micronutriente essencial para plantas (desenvolvimento da parede celular) e em quantidades vestigiais em animais para a saúde óssea e absorção mineral.</p>
-                    
                     <h3>Importância Econômica</h3>
                     <p>Insumo chave nas indústrias de vidro técnico, energia renovável, agricultura e tecnologia de ponta.</p>
                 </div>
                 <div>
                     <h3>Toxicidade e Riscos à Saúde</h3>
                     <p>Em doses concentradas, compostos solúveis (como o ácido bórico) são tóxicos, podendo provocar distúrbios gastrointestinais, cefaleias, náuseas e efeitos sobre o sistema reprodutivo em exposições crônicas.</p>
-                    
                     <h3>Impacto Ambiental e Cuidados</h3>
                     <p>Utilizar Equipamentos de Proteção Individual (EPIs) adequados durante o manuseio industrial. Evitar descarte não tratado no meio ambiente para proteger ecossistemas aquáticos.</p>
                 </div>
             </div>
         </section>
 
-        <!-- Seção F: Fontes -->
+        <!-- Seção F -->
         <section id="fontes" class="card">
-            <h2>F) Fontes Consultadas</h2>
+            <h2><span class="tag">F</span>Fontes Consultadas</h2>
             <ul class="sources-list">
-                <li>1. Conselho Regional de Química IV Região (CRQ-SP) — Tabela Periódica: <a href="https://crqsp.org.br/tabelaperiodica" target="_blank">https://crqsp.org.br/tabelaperiodica</a></li>
-                <li>2. Tabela Periódica Completa e Interativa: <a href="https://www.tabelaperiodica.org/elemento/boro/" target="_blank">https://www.tabelaperiodica.org/elemento/boro/</a></li>
-                <li>3. Revista Pesquisa FAPESP — Ciência e Tecnologia: <a href="https://revistapesquisa.fapesp.br/" target="_blank">https://revistapesquisa.fapesp.br/</a></li>
-                <li>4. Tabela Periódica Interativa e Guia dos Elementos: <a href="https://tabperiodic.com/pt-BR/" target="_blank">https://tabperiodic.com/pt-BR/</a></li>
+                <li><span>1.</span> Conselho Regional de Química IV Região (CRQ-SP): <a href="https://crqsp.org.br/tabelaperiodica" target="_blank" rel="noopener">https://crqsp.org.br/tabelaperiodica</a></li>
+                <li><span>2.</span> Tabela Periódica Completa e Interativa: <a href="https://www.tabelaperiodica.org/elemento/boro/" target="_blank" rel="noopener">https://www.tabelaperiodica.org/elemento/boro/</a></li>
+                <li><span>3.</span> Revista Pesquisa FAPESP: <a href="https://revistapesquisa.fapesp.br/" target="_blank" rel="noopener">https://revistapesquisa.fapesp.br/</a></li>
+                <li><span>4.</span> Tabela Periódica Interativa: <a href="https://tabperiodic.com/pt-BR/" target="_blank" rel="noopener">https://tabperiodic.com/pt-BR/</a></li>
             </ul>
         </section>
-
     </main>
 
-   
-
+    <footer>
+        <div class="container">Boro (B) · Daniel Lins Ribeiro Da Silva · N° 8 · 2.ds.B</div>
+    </footer>
 </body>
 </html>
